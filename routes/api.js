@@ -34,7 +34,7 @@ router.get("/movies", (req, res) => {
           // Handle error after the release.
         if (error) throw error;
 
-        res.json({message: "all movies route"});
+        res.json(results);
         });
     });
 })
